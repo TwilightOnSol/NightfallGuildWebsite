@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Solid black background for the body */
+    color: #FFD700; /* Gold color for text */
+    line-height: 1.6; /* Improved readability */
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #000; /* Solid black header */
+    border-bottom: 2px solid #FFD700; /* Gold border for header */
+}
+
+.team-name {
+    font-size: 3em;
+    animation: glow 1.5s infinite alternate;
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700; }
+    100% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700; }
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #000; /* Solid black background for sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2); /* Subtle shadow for depth */
+}
+
+h2 {
+    border-bottom: 2px solid #FFD700; /* Gold border for headings */
+    padding-bottom: 10px;
+    margin-bottom: 15px; /* Space below heading */
+    font-size: 2em; /* Consistent heading size */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold button */
+    color: #000; /* Black text for contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform for hover effect */
+}
+
+.contact-button:hover {
+    background-color: #FFC107; /* Slightly darker gold */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000; /* Solid black footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #FFD700; /* Gold border for footer */
+}
+
+/* Additional styles for universal elements */
+a {
+    color: #FFD700; /* Consistent link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+button {
+    font-family: 'Arial', sans-serif; /* Ensure buttons use the same font */
+    font-size: 1em; /* Consistent button text size */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
